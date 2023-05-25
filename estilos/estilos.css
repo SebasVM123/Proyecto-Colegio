@@ -1,0 +1,204 @@
+/*Paleta de colores
+GOLD=#CDA34F
+DAISY=#E9E7DA
+STEM=#636B46
+GREENERY=#373F27
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: oswald;
+	src: url(fuentes/Oswald/Oswald-Regular.ttf);
+}
+
+.wrapper {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.cuerpo {
+	font-family: oswald;
+	font-size: 25px;
+	color: #262228;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+body {
+	background-color: #e9e7da;
+}
+
+	header {
+		background-color: #e9e7da;	
+	}
+
+		.logo {
+			float: left;
+		}
+
+		.logo img {
+			width: 100px;
+			padding-top: 5px;
+			padding-bottom: 2px;
+		}
+		
+		.menu {
+			float: right;
+			font-family: oswald;
+			font-size: 30px;
+			padding-top: 30px;
+		}
+
+			.menu ul li a {
+				color: #e9e7da;
+				font-size: 20px;
+				text-decoration: none;
+				padding: 10px 20px;
+				display: block;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease; 
+			}
+
+			.menu ul li a:hover {
+				color: #CDA34F; 
+				background-color: #E9E7DA;
+				border-radius: 50px;  
+			}
+
+				.uno > li {
+					float: left;
+				}
+
+				.menu ul li ul {
+					z-index: 1;
+					display: none;
+					position: absolute;
+					min-width: 140px;
+					background-color: #373f27;
+					border-radius: 20px 20px 20px; 
+				}
+
+			.menu ul li:hover > ul{
+				display: block;
+			}
+
+			.shadow {
+				box-shadow: 0px 4px 15px rgba(0,0,0,.7);
+				z-index: 100;
+				position: absolute;
+				width: 100%;
+			}
+
+/*slider--------------------------------------------------*/
+		.slideshow {
+			padding-top: 118.86px; 
+			width: 100%;
+			position: relative;
+		}
+
+			.slideshow span:hover {
+				color: #CDA34F;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+			}
+
+			.slider li img {
+				width: 100%;
+				max-width: 100%;
+				height: 450px;
+			}
+
+			.paginacion {
+				position: absolute;
+				top: 102%;
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				color: #373F27;
+			}
+
+				.paginacion li {
+					font-size: 20px;
+					margin: 2px 5px;
+					cursor: pointer;
+				}
+
+			.left, .right {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				color: #E9E7DA;
+				font-size: 50px;
+				color: #373F27;
+				cursor: pointer;
+			}
+
+				.left {
+					left: 10px;
+				}
+
+				.right {
+					right: 10px;
+				}
+/*horario-------------------------------------------------*/
+
+.horario td {
+	padding: 20px 20px;
+}
+
+/*fixed header--------------------------------------------*/
+.fmenu {
+	height: 80px;
+	line-height: 80px;
+	top: 0;
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+/*footer--------------------------------------------------*/
+
+footer {
+		background-color: #373F27;
+		margin-bottom: 0;
+	}
+
+	footer table td a {
+		font-family: oswald;
+		text-decoration: none;
+		color: #D7CEC7;
+		font-size: 17px;
+	}	
+
+		footer table td table td {
+			padding: 5px 5px;
+		}
+
+/*estilos de fuentes--------------------------------------*/
+.titulos {
+	font-family: oswald;
+	font-size: 40px;
+	color: #CDA34F;
+}
+
+.texto1 {
+	font-family: open sans;
+	font-size: 25px;
+	color: #262228;
+}
+
+/*---------------------------------------------------------*/
+.horario {
+	border-radius: 20px;
+	background-color: #373F27;
+}
+
